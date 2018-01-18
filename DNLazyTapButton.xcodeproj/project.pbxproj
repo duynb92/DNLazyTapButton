@@ -10,6 +10,7 @@
 		672EFB4A2010567400E85DBB /* DNLazyTapButton.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 672EFB402010567400E85DBB /* DNLazyTapButton.framework */; };
 		672EFB4F2010567400E85DBB /* DNLazyTapButtonTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 672EFB4E2010567400E85DBB /* DNLazyTapButtonTests.swift */; };
 		672EFB512010567400E85DBB /* DNLazyTapButton.h in Headers */ = {isa = PBXBuildFile; fileRef = 672EFB432010567400E85DBB /* DNLazyTapButton.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		672EFB5B2010578C00E85DBB /* DNLazyTapButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 672EFB5A2010578C00E85DBB /* DNLazyTapButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,6 +30,7 @@
 		672EFB492010567400E85DBB /* DNLazyTapButtonTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DNLazyTapButtonTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		672EFB4E2010567400E85DBB /* DNLazyTapButtonTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DNLazyTapButtonTests.swift; sourceTree = "<group>"; };
 		672EFB502010567400E85DBB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		672EFB5A2010578C00E85DBB /* DNLazyTapButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DNLazyTapButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,6 +74,7 @@
 			isa = PBXGroup;
 			children = (
 				672EFB432010567400E85DBB /* DNLazyTapButton.h */,
+				672EFB5A2010578C00E85DBB /* DNLazyTapButton.swift */,
 				672EFB442010567400E85DBB /* Info.plist */,
 			);
 			path = DNLazyTapButton;
@@ -148,6 +151,7 @@
 				TargetAttributes = {
 					672EFB3F2010567400E85DBB = {
 						CreatedOnToolsVersion = 9.2;
+						LastSwiftMigration = 0920;
 						ProvisioningStyle = Automatic;
 					};
 					672EFB482010567400E85DBB = {
@@ -196,6 +200,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				672EFB5B2010578C00E85DBB /* DNLazyTapButton.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -334,6 +339,7 @@
 		672EFB552010567400E85DBB /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
@@ -346,6 +352,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.duyn.DNLazyTapButton;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -354,6 +361,7 @@
 		672EFB562010567400E85DBB /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
@@ -374,6 +382,7 @@
 		672EFB582010567400E85DBB /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = DNLazyTapButtonTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -387,6 +396,7 @@
 		672EFB592010567400E85DBB /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = DNLazyTapButtonTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";

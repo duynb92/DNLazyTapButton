@@ -3,12 +3,12 @@ Pod::Spec.new do |s|
 # 1
 s.platform = :ios
 s.ios.deployment_target = '9.0'
-s.name = "DNCasting"
-s.summary = "DNCasting replace default type-casting, obviously provide ultilities type-casting method come to rescue."
+s.name = "DNLazyTapButton"
+s.summary = "DNLazyTapButton prevent monkey tapping."
 s.requires_arc = true
 
 # 2
-s.version = "0.0.2"
+s.version = "0.0.1"
 
 # 3
 s.license = { :type => "MIT", :file => "LICENSE" }
@@ -17,19 +17,19 @@ s.license = { :type => "MIT", :file => "LICENSE" }
 s.author = { "Duy Nguyen" => "nbduy021092@gmail.com" }
 
 # 5 - Replace this URL with your own Github page's URL (from the address bar)
-s.homepage = "https://github.com/duynb92/DNCasting"
+s.homepage = "https://github.com/duynb92/DNLazyTapButton"
 
 # 6 - Replace this URL with your own Git URL from "Quick Setup"
-s.source = { :git => "https://github.com/duynb92/DNCasting.git", :tag => "#{s.version}"}
+s.source = { :git => "https://github.com/duynb92/DNLazyTapButton.git", :tag => "#{s.version}"}
 
 # 7
-s.framework = "Foundation"
+s.framework = "UIKit"
 
 # 8
-s.source_files = "DNCasting/**/*.{swift}"
+s.source_files = "DNLazyTapButton/**/*.{swift}"
 
 # 9
-# s.resources = "DNCasting/**/*.{png,jpeg,jpg,storyboard,xib}"
+# s.resources = "DNLazyTapButton/**/*.{png,jpeg,jpg,storyboard,xib}"
 
 # 10
 s.ios.deployment_target = "9.0"
