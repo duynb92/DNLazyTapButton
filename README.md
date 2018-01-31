@@ -26,7 +26,7 @@ Lazy tap button - prevent monkey tapping
     
 ## License
 
-**DNCasting** is under MIT license. See the [LICENSE](LICENSE) file for more info.
+**DNLazyTapButton** is under MIT license. See the [LICENSE](LICENSE) file for more info.
 
 ## Buy me a coffee
 
